@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Tell us more about you!</p>
+  <form id="survey-form">
+    <label id="name-label">
+      Name: <input id="name" type="text" placeholder="Enter your name" required />
+    </label>
+    <label id="email-label">
+      Email: <input id="email" type="email" placeholder="Enter your email" required />
+    </label>
+    <label id="number-label">
+    Age: <input id="number" type="number" min="13" max="120" placeholder="How old are you?" />
+    </label>
+    <br />
+    <br />
+    How would you like to learn?
+    <select id="dropdown">
+      <option value="">(select one)</option>
+      <option value="1">Books</option>
+      <option value="2">Classes</option>
+      <option value="3">Videos</option>
+      <option value="4">Other</option>
+    </select>
+    <br />
+    <br />
+    Choose your favorite subject: 
+    <input value="html" type="radio" name="choose-button"/> HTML
+      <input value="css" type="radio" name="choose-button"/> CSS
+    <br />
+    <br />
+      What of the following options you like better?
+      <input id="backend" type="checkbox" name="backend" value="backend"> Backend
+      <input id="frontend" type="checkbox" name="frontend" value="frontend"> Frontend
+      <input id="fullstack" type="checkbox" name="fullstack" value="fullstack"> Fullstack
+      <br />
+      <br />
+      Any comments or suggestions?
+      <textarea name="bio" rows="3" cols="30"></textarea>
+      <br />
+      <br />  
+      <input type="submit" value="Submit" class="submit-button"/>
+  </form>
+</body>
